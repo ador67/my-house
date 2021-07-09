@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+#full_body{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.75)),url(image/room.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.nav_bar h1{
+  color: white;
+  cursor: pointer;
+  width: 120px;
+  font-size: 40px;
+}
+.nav_bar h1 sub{
+  color: #ff5200;
+}
+.nav_bar{
+  padding-top: 20px;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_bar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.nav_bar ul  a{
+  text-decoration: none;
+    color: ghostwhite;
+    text-transform: uppercase;
+}
+.nav_bar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #00FFAA;
+  position:absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+.nav_bar ul li:hover::after{
+    width: 100%;
+}
+
+.title{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  color: whitesmoke;
+  text-align: center;
+}
+.title h1{
+  font-size: 50px;
+  margin-top: 70px;
+}
+.title p{
+  color: #BBBCC8DB;
+  margin: 20px 0px;
+}
+button{
+  width: 200px;
+  padding: 15px 3px;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color:white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+span{
+  background: #009688;
+  height: 100%;
+  width: 0%;
+  border-right: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span{
+  width: 100%;
+}
+#perloder{
+  width: 100%;
+  height:100vh;
+  background: white url(image/solid.gif) no-repeat center ;
+  background-size:50%;
+  position: fixed;
+  z-index: 100;
+}
